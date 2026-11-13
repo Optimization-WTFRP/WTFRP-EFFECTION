@@ -2,7 +2,7 @@
 
 Test instances and computational results for **“EFFECTION: An Exact Solution Approach for the Formation and Routing of Worker Teams.”** The paper studies the Worker Team Formation and Routing Problem (WTFRP).
 
-This repository contains **2,310 test instances** in JSON format and **nine result PDFs**.
+This repository contains **2,310 test instances** in JSON format and **seven result PDFs**.
 
 ## Directory structure
 
@@ -21,9 +21,9 @@ WTFRP-EFFECTION/
 │       ├── granularity_60s/
 │       └── granularity_300s/
 └── results/
+    ├── algorithmic_features/
     ├── algorithm_comparison/
-    ├── detailed_results/
-    └── analysis/
+    └── SB/
 ```
 
 ## Test instances
@@ -67,7 +67,13 @@ Coarser S_B inputs are obtained from one-second inputs using `ceil(time_in_secon
 
 ## Computational results
 
-### Algorithm comparison
+### 1. Algorithmic features and ablation experiments
+
+[Algorithmic_features_and_ablation.pdf](results/algorithmic_features/Algorithmic_features_and_ablation.pdf) contains the ablation results for both weight settings, followed by the statistics supporting **Observations on ECS**.
+
+Tables 1–4 report EC, ECS, ECS-NTP, ECS-NSL, and ECS-NRS, including computation times and tour counts. Tables 5–6 summarize the internal statistics of ECS on S_A for uniform and standard weights, respectively.
+
+### 2. Algorithm comparison
 
 Each PDF covers both weight settings of S_A. The filenames containing `EFFECTION` report ECS.
 
@@ -81,18 +87,13 @@ Each PDF covers both weight settings of S_A. The filenames containing `EFFECTION
 
 The algorithms are compared on the same machine, with a time limit of **300 seconds per instance under WTFRPA** and **1,800 seconds under WTFRP**. The experiments use an Intel Core i7-10750H 2.60 GHz processor, 16 GB RAM, and Gurobi 11.0.2. ECS is implemented in Java.
 
-### Ablation and granularity experiments
+### 3. Results for S_B
 
-| PDF | Contents |
-|---|---|
-| [Detailed_uniform_instances.pdf](results/detailed_results/Detailed_uniform_instances.pdf) | Uniform-weight ablation results and detailed results for S_B |
-| [Detailed_standard_instances.pdf](results/detailed_results/Detailed_standard_instances.pdf) | Corresponding standard-weight results |
-| [Analysis_on_uniform_instances.pdf](results/analysis/Analysis_on_uniform_instances.pdf) | Uniform-weight ablation summaries, tour counts, and granularity analysis |
-| [Analysis_on_standard_instances.pdf](results/analysis/Analysis_on_standard_instances.pdf) | Corresponding standard-weight analyses |
+[Results_SB.pdf](results/SB/Results_SB.pdf) contains the analyses and detailed results for both weight settings of S_B.
 
-In each `Detailed_*` PDF, Table 1 reports ECS-NTP, ECS-NSL, and ECS-NRS. Tables 2–7 report the medium-size instances at 300, 60, 30, 15, 5, and 1 second, respectively. Table 8 reports the complete one-second set, with a **3,600-second time limit**. The one-second records in Table 7 also appear in Table 8.
+Section 1 presents the medium-size instances at 300, 60, 30, 15, 5, and 1 second. Tables 1–6 report uniform-weight results, and Tables 7–12 report standard-weight results.
 
-In each `Analysis_on_*` PDF, Table 1 reports EC and ECS for the ablation subset; Tables 2–3 provide grouped statistics for hard S_A instances and one-second instances.
+Section 2 presents the complete one-second set, with a **3,600-second time limit**. Tables 13 and 15 contain grouped statistics; Tables 14 and 16 contain the corresponding per-instance results. The one-second records in Tables 6 and 12 also appear in Tables 14 and 16, respectively.
 
 ### Reading the tables
 
