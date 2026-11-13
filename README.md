@@ -85,12 +85,12 @@ The algorithms are compared on the same machine, with a time limit of **300 seco
 
 | PDF | Contents |
 |---|---|
-| [Detailed_uniform_instances.pdf](results/detailed_results/Detailed_uniform_instances.pdf) | Uniform-weight results for algorithm variants, additional hard S_A instances, and granularity experiments |
+| [Detailed_uniform_instances.pdf](results/detailed_results/Detailed_uniform_instances.pdf) | Uniform-weight results for algorithm variants and granularity experiments |
 | [Detailed_standard_instances.pdf](results/detailed_results/Detailed_standard_instances.pdf) | Corresponding standard-weight results |
 | [Analysis_on_uniform_instances.pdf](results/analysis/Analysis_on_uniform_instances.pdf) | Uniform-weight ablation summaries, tour counts, and granularity analysis |
 | [Analysis_on_standard_instances.pdf](results/analysis/Analysis_on_standard_instances.pdf) | Corresponding standard-weight analyses |
 
-In each `Detailed_*` PDF, Table 1 reports ECS-NTP, ECS-NSL, and ECS-NRS; Table 2 reports additional hard S_A instances. Tables 5–10 report the medium-size instances at 300, 60, 30, 15, 5, and 1 second, respectively. Table 11 reports the complete one-second set, with a **3,600-second time limit**. The one-second records in Table 10 also appear in Table 11.
+In each `Detailed_*` PDF, Table 1 reports ECS-NTP, ECS-NSL, and ECS-NRS. Tables 2–7 report the medium-size instances at 300, 60, 30, 15, 5, and 1 second, respectively. Table 8 reports the complete one-second set, with a **3,600-second time limit**. The one-second records in Table 7 also appear in Table 8.
 
 In each `Analysis_on_*` PDF, Table 1 reports EC and ECS for the ablation subset; Tables 2–3 provide grouped statistics for hard S_A instances and one-second instances.
 
