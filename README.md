@@ -13,7 +13,7 @@ WTFRP-EFFECTION/
 │   ├── SA/
 │   │   ├── uniform_weights/
 │   │   └── standard_weights/
-│   └── continuous_time/
+│   └── SB/
 │       ├── granularity_1s/
 │       ├── granularity_5s/
 │       ├── granularity_15s/
@@ -31,12 +31,12 @@ WTFRP-EFFECTION/
 | Directory | Uniform weights | Standard weights | Total | One stored time unit |
 |---|---:|---:|---:|---|
 | `instances/SA/` | 945 | 945 | 1,890 | 300 seconds |
-| `instances/continuous_time/granularity_1s/` | 135 | 135 | 270 | 1 second |
-| `instances/continuous_time/granularity_5s/` | 15 | 15 | 30 | 5 seconds |
-| `instances/continuous_time/granularity_15s/` | 15 | 15 | 30 | 15 seconds |
-| `instances/continuous_time/granularity_30s/` | 15 | 15 | 30 | 30 seconds |
-| `instances/continuous_time/granularity_60s/` | 15 | 15 | 30 | 60 seconds |
-| `instances/continuous_time/granularity_300s/` | 15 | 15 | 30 | 300 seconds |
+| `instances/SB/granularity_1s/` | 135 | 135 | 270 | 1 second |
+| `instances/SB/granularity_5s/` | 15 | 15 | 30 | 5 seconds |
+| `instances/SB/granularity_15s/` | 15 | 15 | 30 | 15 seconds |
+| `instances/SB/granularity_30s/` | 15 | 15 | 30 | 30 seconds |
+| `instances/SB/granularity_60s/` | 15 | 15 | 30 | 60 seconds |
+| `instances/SB/granularity_300s/` | 15 | 15 | 30 | 300 seconds |
 | **Total** | **1,155** | **1,155** | **2,310** | |
 
 **S_A** contains instances with three planning horizons (60, 90, and 120 minutes), three flight rates (10, 20, and 30 per hour), three execution-mode settings (`i`, `sf`, and `sif`), seven worker strengths (0.3–0.9), five repetitions, and two weight settings. WTFRP and WTFRPA use the same input files; WTFRPA additionally imposes the no-idle-worker assumption.
@@ -82,8 +82,6 @@ Each PDF covers both weight settings of S_A. The filenames containing `EFFECTION
 | [Results_EFFECTION_WTFRP.pdf](results/algorithm_comparison/Results_EFFECTION_WTFRP.pdf) | ECS | WTFRP |
 
 The algorithms are compared on the same machine, with a time limit of **300 seconds per instance under WTFRPA** and **1,800 seconds under WTFRP**. The experiments use an Intel Core i7-10750H 2.60 GHz processor, 16 GB RAM, and Gurobi 11.0.2. ECS is implemented in Java.
-
-For worker strength 0.3, each PDF lists the single feasible instance in each weight setting and states that the remaining instances are infeasible.
 
 ### Ablation and granularity experiments
 
