@@ -49,7 +49,7 @@ For example, `90min-30fph-sif-UW_1_[0.5].json` denotes a 90-minute horizon, 30 f
 
 Input times are expressed in the units shown above. For example, a travel time of `3` in `granularity_15s` represents 45 seconds.
 
-Coarser S_B inputs are obtained from one-second inputs using `ceil(time_in_seconds / granularity_seconds)` for the time fields. S_A and S_B are different instance sets: identically named files need not have identical travel times or task durations.
+Coarser S_B inputs are obtained from one-second inputs using `ceil(time_in_seconds / granularity_seconds)` for the time fields.
 
 ### JSON fields
 
