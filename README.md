@@ -109,13 +109,6 @@ In each `Analysis_on_*` PDF, Table 1 reports EC and ECS for the ablation subset;
 | `T` | Time limit reached |
 | `M` | Memory limit reached |
 
-### Summary statistics
-
-- Optimal-solution percentages are calculated over feasible instances. Nonzero average gaps are calculated over instances not proved optimal.
-- Ablation runtime averages use all 28 feasible instances, or 14 per weight setting, including both phases when model switching occurs. Averages are calculated before display rounding.
-- Mean tour counts use the common 27-instance sample for EC and ECS, excluding standard-weight `120min-30fph-sif_4_[0.7]`, whose final EC count is unavailable (`M`). Its per-instance row remains in the PDF.
-- Granularity curves average the five repetitions at each worker strength and weight setting. Objective values use five-minute units, and curve labels are truncated to one decimal place.
-
 ## Benchmark source
 
 The S_A benchmarks originate from Dall'Olio, G., and Kolisch, R. (2023), *Formation and Routing of Worker Teams for Airport Ground Handling Operations: A Branch-and-Price-and-Check Approach*, Transportation Science, 57(5), 1231–1251. See [TeamFormationRoutingAirport](https://github.com/giacomodallolio/TeamFormationRoutingAirport).
