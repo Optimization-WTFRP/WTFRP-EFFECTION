@@ -85,7 +85,7 @@ The algorithms are compared on the same machine, with a time limit of **300 seco
 
 | PDF | Contents |
 |---|---|
-| [Detailed_uniform_instances.pdf](results/detailed_results/Detailed_uniform_instances.pdf) | Uniform-weight results for algorithm variants and granularity experiments |
+| [Detailed_uniform_instances.pdf](results/detailed_results/Detailed_uniform_instances.pdf) | Uniform-weight ablation results and detailed results for S_B |
 | [Detailed_standard_instances.pdf](results/detailed_results/Detailed_standard_instances.pdf) | Corresponding standard-weight results |
 | [Analysis_on_uniform_instances.pdf](results/analysis/Analysis_on_uniform_instances.pdf) | Uniform-weight ablation summaries, tour counts, and granularity analysis |
 | [Analysis_on_standard_instances.pdf](results/analysis/Analysis_on_standard_instances.pdf) | Corresponding standard-weight analyses |
