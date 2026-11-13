@@ -1,6 +1,6 @@
 # WTFRP-EFFECTION
 
-Test instances and computational results for **“EFFECTION: An Exact Solution Approach for the Formation and Routing of Worker Teams.”** The paper studies the Worker Team Formation and Routing Problem (WTFRP). EFFECTION is the time-point detection method, and ECS is the Enumeration-Check-and-Switch solution approach.
+Test instances and computational results for **“EFFECTION: An Exact Solution Approach for the Formation and Routing of Worker Teams.”** The paper studies the Worker Team Formation and Routing Problem (WTFRP).
 
 This repository contains **2,310 test instances** in JSON format and **nine result PDFs**.
 
@@ -64,8 +64,6 @@ Coarser S_B inputs are obtained from one-second inputs using `ceil(time_in_secon
 | `formations`, `formations_w_d` | Team composition by exact skill level and cumulative skill threshold, respectively |
 | `workers`, `workers_w_d` | Workforce availability by exact skill level and cumulative skill threshold, respectively |
 | `tasks_per_formation` | Formation-to-task mapping |
-
-For a selected task mode, the latest permissible start is `latest_finish[task] - modes[task][formation]`. Algorithms should apply the compatibility rules of the chosen WTFRP or WTFRPA setting.
 
 ## Computational results
 
