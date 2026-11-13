@@ -47,7 +47,7 @@ WTFRP-EFFECTION/
 
 For example, `90min-30fph-sif-UW_1_[0.5].json` denotes a 90-minute horizon, 30 flights per hour, slow/intermediate/fast modes, uniform weights, repetition 1, and worker strength 0.5. The absence of `-UW` denotes standard weights. The other mode settings are `i` (intermediate) and `sf` (slow/fast).
 
-Input times are expressed in the units shown above. For example, a travel time of `3` in `granularity_15s` represents 45 seconds. PDF computation times are already in seconds. To express an objective calculated directly from input times in five-minute units, multiply it by `granularity_seconds / 300`.
+Input times are expressed in the units shown above. For example, a travel time of `3` in `granularity_15s` represents 45 seconds. To express an objective calculated directly from input times in five-minute units, multiply it by `granularity_seconds / 300`.
 
 Coarser S_B inputs are obtained from one-second inputs using `ceil(time_in_seconds / granularity_seconds)` for the time fields. S_A and S_B are different instance sets: identically named files need not have identical travel times or task durations.
 
